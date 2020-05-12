@@ -1,9 +1,8 @@
 # Windows Dev Environment
 
-While we **strongly** recommend students use Macs for our training programs, we acknowledge that there are a number of limitations that may prevent a student from using/having access to a Mac. 
-
 While Apple is the standard for developers, Microsoft has taken strides to improve the experience of developing on a Windows machine. First and foremost among these steps is their support for  **Windows Subsystem for Linux**.
 
+**[TODO: Finish intro]**
 
 In this repo are instructions for setting up:
 
@@ -11,7 +10,7 @@ In this repo are instructions for setting up:
 2. Git for Windows
 3. Git for WSL
 4. Node and NPM
-5. Docker
+5. Java
 6. 
 
 ## Getting Set Up
