@@ -11,7 +11,8 @@ In this repo are instructions for setting up:
 3. Git for WSL
 4. Node and NPM
 5. Java
-6. 
+6. Docker
+7. 
 
 ## Getting Set Up
 
@@ -69,7 +70,7 @@ You may also want to supply some config information for Git to use.
 
 ```
 git config --global user.name "Ash Coca"
-git config --global user.email ash.coca@galvanize.com
+git config --global user.email ash.coca@email.com
 ```
 
 > This is an optional step, but will make things a little faster when you're pushing and pulling from Github.
