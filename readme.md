@@ -2,16 +2,14 @@
 
 While Apple is the standard for developers, Microsoft has taken strides to improve the experience of developing on a Windows machine. First and foremost among these steps is their support for  **Windows Subsystem for Linux**.
 
-**[TODO: Finish intro]**
-
 In this repo are instructions for setting up:
 
 1. Windows Subsystem for Linux
 2. Git for Windows
 3. Git for WSL
 4. Node and NPM
-5. Java
-6. Docker
+5. Java [TODO]
+6. Docker [TODO]
 7. 
 
 ## Getting Set Up
@@ -27,7 +25,6 @@ In this repo are instructions for setting up:
 3. Scroll down and check the box labeled "Windows Subsystem for Linux"
 4. Hit OK - It may take a minute because we are installing the Linux File System on our OS.
 5. Restart
-
 	
 > If you have issues with the above steps you can still enable WSL through a different method.
 > 	
@@ -102,5 +99,21 @@ Now we're ready to install Node!
 >To change the version of Node.js you would like to use for a project, create a new project directory `mkdir NodeTest`, and enter the directory `cd NodeTest`, then enter `nvm use node` to switch to the Current version, or `nvm use --lts` to switch to the LTS version. You can also use the specific number for any additional versions you've installed, like `nvm use v8.2.1`. (To list all of the versions of Node.js available, use the command: `nvm ls-remote`). 
 
 ## Additional Config Options
+
+### WSL2
+
+If you're using Windows 10 v2004 or later you may want to upgrade to WSL2. This adds a number of features that you can read about here: [WSL2 Docs](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index)
+
+To enable WSL2, we'll need to first enable the *Virtual Machine Platform* optional component. 
+
+- Open **powershell**
+
+- Execute the following command: `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+
+> You will still need to restart even though we're adding the `/norestart` flag.
+
+- Once your machine restarts, you'll need to open **powershell** again.
+
+- Execute the following command: `wsl --set-default-version 2`
 
 ## Common Issues
